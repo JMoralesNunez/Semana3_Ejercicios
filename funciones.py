@@ -46,3 +46,78 @@ def palíndromo(palabra):
         print("Es palíndromo")
     else:
         print("No es palíndromo")
+        
+def factorial(num):
+    fact = 1
+    i = 1
+    while i <= num:
+        fact *= i
+        i += 1
+    return fact
+
+def noDuplicados(list):
+    newList=[]
+    for item in list:
+        if item not in newList:
+            newList.append(item)
+    return newList
+
+def fizzbuzz(num):
+    if (num % 3 == 0 and num % 5 == 0): 
+        print("FizzBuzz")
+    elif num % 3 == 0:
+        print("Fizz")
+    elif (num % 5 == 0): 
+        print("Buzz")
+
+def vocales(palabra):
+    count=0
+    vocales = "aeiouAEIOU"
+    for letra in palabra:
+        if letra in vocales:
+            count += 1
+    return count
+
+def invertir(palabra):
+    x=list(palabra)
+    x.reverse()
+    y=",".join(x)
+    y=y.replace(",","")
+    return y
+
+import re
+
+def validar_contraseña(contraseña):
+    if not re.search("[A-Z]", contraseña):
+        return False
+
+    if not re.search("[a-z]", contraseña):
+        return False
+
+    if not re.search("[0-9]", contraseña):
+        return False
+
+    if not re.search("[^a-zA-Z0-9]", contraseña):
+        return False
+
+    return True
+
+import random
+
+def lanzar_dado():
+    return random.randint(1, 6)
+
+def sumaUnicos(list):
+    newList=[]
+    for item in list:
+        if item not in newList:
+            newList.append(item)
+    suma=sum(newList)
+    return suma
+
+import random
+import string
+
+def randompassword(length):
+    random_string = ''.join(random.choices(string.ascii_letters + string.digits, k=length))
+    return random_string
