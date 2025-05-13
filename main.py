@@ -1,4 +1,4 @@
-from funciones import function, mayoria, temp, area, mayor_lista, count_letter, filtrar_pares, palíndromo
+from funciones import *
 
 num = int(input("Enter a number: "))
 function(num)
@@ -32,3 +32,21 @@ print(lista_pares)
 
 palíndroma = input("Ingrese una palabra: ")
 palíndromo(palíndroma)
+
+print(factorial(4))
+
+print(noDuplicados([1,2,2,3,4,5,5,6,7,8,8,9]))
+
+fizzbuzz(15)
+
+print(vocales("palabra"))
+
+print(invertir("Queso"))
+
+print(validar_contraseña("Riwi123#"))
+
+print(lanzar_dado())
+
+print(sumaUnicos([1,2,2,3,4,5,5,6,7,8,8,9]))
+
+print(randompassword(10))
