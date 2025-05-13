@@ -1,4 +1,10 @@
-def function(num1):
+def saludo(nombre):
+    print(f"Hola {nombre}, cómo estás?")
+
+def suma(num1,num2):
+    return num1+num2
+
+def par(num1):
     if num1 % 2 == 0:
         print("Este número es par") 
     else:

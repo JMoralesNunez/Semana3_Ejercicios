@@ -1,7 +1,7 @@
 from funciones import *
 
 num = int(input("Enter a number: "))
-function(num)
+par(num)
 
 edad = int(input("Enter your age: "))
 mayoria(edad)  
